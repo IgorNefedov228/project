@@ -1,0 +1,9 @@
+import sqlite3
+ 
+CREATE TABLE weightgain_brek (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        dish TEXT,
+        calories INTEGER,
+        proteine INTEGER
+    )
+""")
