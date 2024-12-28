@@ -30,8 +30,6 @@ def pagepp(request):
 def sector(request):
     return render(request, 'main/sector.html')
 
-def python(request):
-    return render(request, 'main/python.html')
 
 
 

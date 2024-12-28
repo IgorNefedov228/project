@@ -7,13 +7,14 @@
     <title>RichFood</title>
 </head>
 <body>
+    <form action="#" method="#" id="form">
     <div style="width: 100%; height: 100%; position: relative; background: white">
         <img style="width: 1920px; height: 970px; left: 0px; top: 0px; position: absolute" src="https://s3-alpha-sig.figma.com/img/576a/ac85/aa11518b6bd79f151abcbb334e905504?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcahhbT2z1lfpNhIr4rvYlLVP7Iis-J6aBW8f~xAEFjccumFOnLS7g7SCe1gLIl7UYTu~ht89hjakirAorAzh9qq6rssPqtfBp1bH4lHUj9Urqw6H1eesyB2~jnZKdWsmQJUtk19Y6ktkl61UnMX3T4kpJbvgyX0bELaGS5j3Z5y-VeHvh00SWA2Y3wB3EXKMX-ImeAib5CNV74e7v~adznILlTFTSB8I~SWhtAfyoS0wR1ExSTCssB54OQPYCxHmASqUmF9-YOV2Nx2G~SBwQUqxEu~xjrpJUqOZU7Zqxiai6uB8wMPrASX6rzU11BxMQL5LJWa9vXeZ-oPjfmd2g__" />
         <div style="width: 337px; height: 47px; left: 120px; top: 30px; position: absolute; color: white; font-size: 41px; font-family: Inspiration; font-weight: 400; word-wrap: break-word">RichFood</div>
         <div style="width: 1084px; left: 120px; top: 285px; position: absolute; color: black; font-size: 61px; font-family: Playfair Display; font-weight: 400; line-height: 70px; letter-spacing: 0.61px; word-wrap: break-word"><br/>Индивидуальные планы питания<br/> от RichFood</div>
         <div style="width: 462px; height: 72px; left: 120px; top: 554px; position: absolute; color: black; font-size: 27px; font-family: Montserrat; font-weight: 400; line-height: 37px; letter-spacing: 0.27px; word-wrap: break-word">Ваш путь к здоровью и идеальной форме с удобными решениями</div>
         <div style="width: 280px; height: 60px; left: 123px; top: 751px; position: absolute">
-            <a class="button" href="http://127.0.0.1:8000">
+            <a class="button" href="#yak1">
             <div style="width: 280px; height: 60px; left: 0px; top: 0px; position: absolute; background: #FFFB0E; border-radius: 30px"></div>
             <div style="left: 56px; top: 9px; position: absolute; text-align: center; color: #280000; font-size: 24px; font-family: Montserrat; font-weight: 400; line-height: 37px; letter-spacing: 0.24px; word-wrap: break-word">попробовать</div>
         </div>
@@ -54,6 +55,7 @@
         <div style="width: 788px; height: 60px; left: 206px; top: 3622px; position: absolute">
             <div style="width: 220px; height: 60px; left: 0px; top: 0px; position: absolute; color: black; font-size: 50px; font-family: Inspiration; font-weight: 400; word-wrap: break-word">RichFood</div>
             <div style="left: 616px; top: 11px; position: absolute; color: #747381; font-size: 15px; font-family: Inspiration; font-weight: 400; word-wrap: break-word">Согласие на обработку <br/>персональных данных</div>
+            <div id="yak1"></div>
             <div style="left: 343px; top: 11px; position: absolute; color: #747381; font-size: 15px; font-family: Inspiration; font-weight: 400; word-wrap: break-word">Политика<br/>конфидециальности</div>
         </div>
         <div style="width: 1920px; height: 324px; left: 0px; top: 3484px; position: absolute; background: rgba(202.26, 202.72, 205.69, 0.40)"></div>
@@ -69,6 +71,16 @@
             <img style="width: 670px; height: 450px; left: 0px; top: 28px; position: absolute; border-radius: 55px" src="https://s3-alpha-sig.figma.com/img/4a49/8454/faffd5ef57ce9a754667e47913cccab9?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OUaidhsNZwT~mqvX1jroh4RoWNkteLdJt~TOCujT1MwDkEDgVPMYcbFPuisX16LgDtDIW~MKjoA687U2SkAoUC1MNej7JKr9QwFxp0ifsqh-0Fw1ZQSwqptdjy5QNEefQlq~PX3-y16x9iqXuC6fQVs8kdklKNrA2I2lO6RAwVmzP-tspLZClbXBvnuz25MI7hMbBCf58XhNav2p3je1-6KukEm8-L8wzDfCwCqPFYpQUog4zxs~bJIfSqY1W6HJtNvbK84JL-zfIKSwu8SOA78oeIVTOHCNp7Tg8iWmfwX6dgFZU3phxPeqNYdcVYHsifMXAqaW3F5igGIF-7SL5Q__" />
             <div style="left: 747px; top: 0px; position: absolute; color: black; font-size: 71px; font-family: Montserrat; font-weight: 700; line-height: 100px; letter-spacing: 0.71px; word-wrap: break-word">похудение</div>
         </div>
-    </div>
+    </div>     
+</form>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+      
+</script>
 </body>
 </html>

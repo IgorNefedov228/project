@@ -13,7 +13,6 @@ urlpatterns = [
     path('pagep', views.pagep),
     path('pagepp', views.pagepp),
     path('sector', views.sector),
-    path('python', views.python),
 
     
 
