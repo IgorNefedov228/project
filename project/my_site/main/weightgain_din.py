@@ -1,6 +1,5 @@
 import random
 
-# Шаг 1: Создание словаря
 dictionary = { "Суп-пюре из цветной капусты": (6, 220),
     "Овощное рагу с курицей и картошкой": (30, 450),
     "Фаршированные баклажаны мясом и рисом": (28, 500),
@@ -113,14 +112,13 @@ dictionary = { "Суп-пюре из цветной капусты": (6, 220),
     "Говяжьи стейки на гриле": (40, 550)
 }
 
-# Шаг 2: Получение случайного ключа и его значений
+
 def get_random_entry(dictionary):
-    # Выбор случайного ключа
+    
     random_key = random.choice(list(dictionary.keys()))
-    # Получение значений по ключу
+    
     values = dictionary[random_key]
     
     return random_key, values[0], values[1]
 
-# Пример использования
 wdt, wdp, wdc = get_random_entry(dictionary)

@@ -1,6 +1,5 @@
 import random
 
-# Шаг 1: Создание словаря
 dictionary = {
      "Овсянка с бананом и орехами": (10, 350),
     "Творог с медом и ягодами": (25, 300),
@@ -105,14 +104,13 @@ dictionary = {
 
 }
 
-# Шаг 2: Получение случайного ключа и его значений
+
 def get_random_entry(dictionary):
-    # Выбор случайного ключа
+    
     random_key = random.choice(list(dictionary.keys()))
-    # Получение значений по ключу
+    
     values = dictionary[random_key]
     
     return random_key, values[0], values[1]
 
-# Пример использования
 wst, wsp, wsc = get_random_entry(dictionary)

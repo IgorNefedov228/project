@@ -1,6 +1,6 @@
 import random
 
-# Шаг 1: Создание словаря
+
 dictionary = {
    "Куриные бедра, запеченные с розмарином": (30, 400),
     "Стейк из индейки с запеченными овощами": (35, 450),
@@ -60,14 +60,14 @@ dictionary = {
 
 }
 
-# Шаг 2: Получение случайного ключа и его значений
+
 def get_random_entry(dictionary):
-    # Выбор случайного ключа
+    
     random_key = random.choice(list(dictionary.keys()))
-    # Получение значений по ключу
+
     values = dictionary[random_key]
     
     return random_key, values[0], values[1]
 
-# Пример использования
+
 ddt, ddp, ddc = get_random_entry(dictionary)

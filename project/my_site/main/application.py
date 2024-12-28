@@ -8,7 +8,7 @@ def index():
     if request.method == 'POST':
         name = request.form.get('name')
         email = request.form.get('email')
-        # Обработка данных, например, их сохранение или отправка
+        
         return f'Имя: {name}, Email: {email}'
     return '''
         <form method="POST">

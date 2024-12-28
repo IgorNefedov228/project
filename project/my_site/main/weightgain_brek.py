@@ -1,6 +1,6 @@
 import random
 
-# Шаг 1: Создание словаря
+
 dictionary = {
     
     "Каша из овсяных хлопьев с бананом": (8, 300),
@@ -106,16 +106,14 @@ dictionary = {
 
 }
 
-# Шаг 2: Получение случайного ключа и его значений
 def get_random_entry(dictionary):
-    # Выбор случайного ключа
+
     random_key = random.choice(list(dictionary.keys()))
-    # Получение значений по ключу
+
     values = dictionary[random_key]
     
     return random_key, values[0], values[1]
 
-# Пример использования
 wbt, wbp, wbc = get_random_entry(dictionary)
 
 print(wbt, wbp, wbc)
